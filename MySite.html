@@ -1,0 +1,161 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Style.css"/>
+    <style>
+        body {
+            background-color: #e6e6ff;
+        }
+        h3 {
+            color: #600080;
+        }
+    </style>
+    <title>www.etireznik.com</title>
+</head>
+<body>
+    <div id="menu">
+        <center>
+            <b>
+                <li>
+                    <a href="#about">About Me</a>
+                    <a>
+                        |
+                    </a>
+                    <a href="#photos">My Photos</a>
+                    <a>
+                        |
+                    </a>
+                    <a href="#playlist">My Playlist</a>
+                    <a>
+                        |
+                    </a>
+                    <a href="#like">Like</a>
+                    <a>
+                        |
+                    </a>
+                    <a href="#qrcoder">QR code</a>
+                    <a>
+                        |
+                    </a>
+                    <a href="#spa">Q&A</a>
+                    <a>
+                        |
+                    </a>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </b>
+        </center>
+    </div>
+
+    <section id="about" class="section">
+        <center>
+            <h3><i>About Me</i></h3>
+            <p>
+                שמי אתי רזניק.
+                <br />
+                אני אוהבת....
+                <br />
+                תחומי העניין שלי עד כה מהתואר...
+                <br />
+                אני מצפה שהקורס יתן לי כלים לעתיד, שילמד אותי ...
+                <br />
+                היה לי קשה בעבודה...
+                <br />
+            </p>
+        </center>
+    </section>
+
+    <section id="photos" class="section">
+        <center>
+            <h3><i>My Photos</i></h3>
+            <br />
+            <img src="pic\pic8.jpeg" width="500" height="450" />
+            <br />
+            <br />
+        </center>
+
+    </section>
+
+    <section id="playlist" class="section">
+        <center>
+            <h3><i>My Playlist</i></h3>
+            <br />
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLn5mfcj6CeyT7qIlgPwpd1LsoftHi2guK" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </center>
+    </section>
+
+    <section id="like" class="section">
+        <center>
+            <h3><i>Give Me a Like</i></h3>
+         
+            <br />
+        </center>
+
+    </section>
+
+    <section id="qrcoder" class="section">
+        <center>
+            <h3><i>Scan My Code</i></h3>
+            <br />
+        </center>
+     
+    </section>
+
+    <section id="spa" class="section">
+        <center>
+            <h3><i>Ans</i></h3>
+            ans
+            <br />
+        </center>
+    </section>
+
+    <section id="contact" class="section">
+        <center>
+            <h3><i>Contact Me</i></h3>
+            <form method="post" action="etireznik6@gmail.com">
+                <p>
+                    <label>
+                        <b>
+                            Your Email:
+                            
+                        </b>
+                        <br />
+                        <input type="email" placeholder="name@domain.com"
+                               required /> (name@domain.com)
+                    </label>
+                </p>
+                <P>
+                    <label>
+                        <b>
+                            Comments:
+                        </b>
+                    </label>
+                    <br />
+
+                    <TEXTAREA NAME="comments" ROWS="4" COLS="36"></TEXTAREA>
+                </P>
+                <p>
+                    <input type="submit" value="Send" />
+
+                </p>
+            </form>
+        </center>
+</section>
+
+
+    <script type="text/javascript">
+$(function(){
+  $("#nav a").click(function(e){
+    e.preventDefault();
+    $('html,body').scrollTo(this.hash,this.hash);
+  });
+});
+    </script>
+    <script type="text/javascript">
+ $(document).scroll(function() {
+    $('#menu').toggle($(this).scrollTop()>1000)
+ });
+    </script>
+</body>
+</html>
